@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping page</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar navbar-expand-sm justify-content-around p-2 bg-light">
+                <a class="brand" href="index.html">online Shopping</a>
+                <ul id="links" class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="login.html">login</a></li>
+                    <li><a class="nav-link" href="register.html">register</a></li>
+                </ul>
+                <ul id="user_info">
+                    <li><a href="#" id="user_data">Welcome,</a></li>
+                </ul> 
+                <ul class="navbar-nav"  id="cart_content">
+                    <li class="nav-item">
+                        <i class="fas fa-shopping-cart shop-cart"></i>
+                        <span class="badge">0</span>
+                    </li>
+                    <li class="nav-item" id="shop-cart">
+                        <a href="#">Cart</a>
+                        <i class="fas fa-caret-down down"></i>
+                        <div class="products-list" style="display:none">
+                            <div id="products-div"></div>
+                            <div class="view_products">
+                                <a href="carts.html">view all products</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="log_out">log out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            
+        
+    </header> 
+    <section>
+       <div class="container">
+        <div class="row select-section">
+            <div class="form-group col-6 select-div" >
+                <select name="" id="select" class="form-control">
+                    <option value="search by name" id="option1">Search by Name</option>
+                    <option value="search by category" id="option2">Search by Category</option>
+                </select>
+                
+            </div>
+            <div class="form-group col-6 search-div">
+                <input type="search" class="form-control"id="search" placeholder="Search">
+            </div>
+        </div>
+       </div>
+       <div class="line"></div>
+       <div class="container">
+            <div class="row products">
+                
+            </div>
+       </div>
+      
+    </section>
+    
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script2.js"></script>
+</body>
+</html>
